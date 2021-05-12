@@ -1,0 +1,20 @@
+https://itmscoaching.com/wp-content/uploads/2019/01/nguyen-tac-kiem-thu-phan-mem.jpg
+
+# 7 NGUYÊN TẮC KIỂM THỬ PHẦN MỀM
+    1. TESTING SHOW THE PRESENCE OF DEFECTS
+        TODO: Kiểm thử chứng minh sự hiện diện của lỗi
+    2. EXHAUSTIVE TESTING IS IMPOSSIBLE
+        TODO: Kiểm thử toàn bộ là không thể (cái gì quan trọng: test trước && không quan trọng: test sau
+    3. EARLY TESTING
+        TODO: Kiểm thử càng sớm càng tốt (Ví dụ xây nhà)
+    4. DEFECT CLUSTERING
+        TODO: Nơi nào có vài con bug thì xung quanh đó có rất nhiều bug
+    5. PESTICIDE PARADOX
+        TODO: Nghịch lý thuốc trừ sâu
+            * Trong nông nghiệp, nếu 1 con sâu mà phun 1 loại thuốc thì nó sẽ lờn thuốc. (1)
+            * Trong phần mềm: lỗi luôn luôn tồn tại (2)
+            (1) && (2) ==> update test case :((
+    6. TESTING IS CONTEXT DEPENDENT
+        TODO: Kiểm thử theo ngữ cảnh độc lập
+    7. ABSENCE OF ERRORS FALLACY
+        TODO: Phần mềm luôn luôn có lỗi (kiểm thử là chứng minh phần mềm có lỗi)

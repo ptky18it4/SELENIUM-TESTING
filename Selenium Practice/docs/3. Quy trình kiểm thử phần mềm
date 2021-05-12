@@ -1,0 +1,47 @@
+https://hr1tech.com//htdocs/images/owners/hr1tech/blog-image/tester-process.png
+
+# SOFTWARE TESTING LIFE CYCLE (STLC)
+    1. Requirement Analysis (Phân tích yêu cầu)
+        ## TODO
+            * Ngồi cùng với cả team để phân tích yêu cầu (bắt buộc tham gia)
+            * Tester sẽ là người tìm ra, đặt ra những bug, những câu hỏi mà Manager, Dev,... không để ý đến.
+
+    2. Test Planning (Lập kế hoạch kiểm thử)
+        ## TODO
+            * Xác định những Scope(Phạm vi) dự án:
+                VD: Tester sẽ test chức năng này ở phần này còn đối với những chức năng ở phần khác thì ta không test.
+            * Phương pháp tiếp cận:
+                VD:
+                => Bước 1 (Test REGISTER) -> Bước 2 (Test LOGIN) -> Bước N
+                => Ứng dụng công cụ test nào
+                => Có sử dụng automation test hay không
+                => Có test security hay không
+                => Team test có bao nhiêu người (Senior, Manager, Architech,...)
+                => Lên kế hoạch test cái gì trước(sau)
+                => Lên kế hoạch bắt đầu, kết thúc
+    3. Test Case Development*
+       ## TODO
+           * Khi người developer bắt đầu code thì tester làm gì?
+           * Tester phải viết test case (Làm sao để biết được cần viết cái gì)
+           # Yêu cầu cần phải biết, phải hiểu:
+           ==> Phải hiểu requirement
+           ==> Phải vạch ra những test scenario nào?
+           ==> Phải test những chức năng gì?
+
+    4. Environment Setup
+       ## TODO
+           * Phải để ý đến môi trường test (cái này tuy đơn giản nhưng dễ mắc lỗi)
+           VD: Phần mềm sẽ chạy ở những Brower nào (Chrome, FireFox, Safari, Android, iOS
+           ==> Cần phải đảm bảo có đầy đủ những môi trường mà requirement của khách hàng yêu cầu
+    5. Test Execution
+       # TODO
+          * Dựa theo những test case, environment đã làm ở bước 3, 4 , test plan ==> bắt đầu test
+    6. Test Cycle Closure
+       ## TODO
+           * Báo cáo (báo cáo cái gì sau khi test)
+           => Có bao nhiêu test case (Pass || Fail)
+           => Có bao nhiêu con Bug
+           => Con nào được fix, con nào chưa fix
+           => Mức độ nghiêm trong của con BUG là như thế nào?
+           => Dev nào fix được nhiều lỗi, làm tốt...
+           => ...

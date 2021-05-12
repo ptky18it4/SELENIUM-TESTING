@@ -1,0 +1,21 @@
+https://www.edureka.co/blog/wp-content/uploads/2019/08/levels-of-testing-462x300.png
+# CÁC CẤP ĐỘ KIỂM THỬ PHẦN MỀM
+    1. UNIT TESTING (Kiểm thử đơn vị)
+        ## TODO
+            * Phần unit test này đối với tester thì không cần quá quan tâm (chủ yếu là dev sẽ làm
+              tuy nhiên nếu bạn là tester thì bạn cũng cần phải biết cơ bản về nó
+            * Unit test là test những chức năng nhỏ trong phần mềm (VD: +, -, *, /,...)
+            * VD: 1 chương trình có chức năng: +, -, *, /
+            => Dev sẽ test riêng lẻ từng chức năng trên
+    2. INTEGRATION TESTING (Kiểm thử tích hợp)
+       ## TODO
+           * Kiểm thủ tích hợp hiểu đơn giản đó chính là test xem việc kết hợp những chức năng của chương trình với nhau
+             có sinh ra lỗi hay không.
+           * VD: Kết hợp các phép toán + và * với nhau xem kết quả có đung hay không (2+3*5=32)
+                 - Nếu kết quả ra số khác là sai... => Gọi tên dev trong đêm
+    3. SYSTEM TESTING (Kiểm thử hệ thống)
+       ## TODO
+           * Test toàn bộ hệ thống, quét lại 1 lần nữa từ đầu đến cuối các chức năng
+    4. ACCEPTANCE TESTING (Kiểm thử chấp nhận)
+       ## TODO
+           * Qúa trình này dành cho khách hàng, kiểm tra mức độ hài lòng của khách hàng.

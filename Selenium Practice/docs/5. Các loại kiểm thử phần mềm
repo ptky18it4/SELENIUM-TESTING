@@ -1,0 +1,28 @@
+https://hackr.io/blog/types-of-software-testing/thumbnail/large
+
+# TYPE OF SOFTWARE TESTING
+    # FUNCTIONAL TESTING (Kiểm thủ chức năng)
+      ## TODO
+          * Hiểu đơn giản là kiểm tra xem chức năng A có hoạt động như yêu cầu đã đề ra hay là không.
+      ## TODO:
+            * CASE
+                1. Unit testing
+                2. Integration Testing
+                3. System Testing
+                4. Interface Testing
+                5. Regression Testing
+                6. User Acceptance Testing
+    # NON-FUNCTIONAL TESTING (Kiểm thử phi chức năng)
+      ## TODO
+          * Hiểu đơn giản là...
+      ## TODO
+            * CASE
+                1. Documentation Testing
+                2. Installation Testing
+                3. Performance Testing
+                  3.1. Loading Testing
+                  3.2. Stress Testing
+                  3.3. Endurance Testing
+                  3.4 Spike Testing
+                4. Reliability Testing
+                5. Security Testing

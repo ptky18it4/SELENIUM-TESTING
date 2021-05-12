@@ -8,7 +8,7 @@ class BaseTests {
     public void setUp() {
 //        System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
         driver = new ChromeDriver();
-        driver.get("https://the-internet.herokuapp.com/");
+        driver.get("http://www.google.com");
         driver.manage().window().maximize();
         System.out.println(driver.getTitle());
     }
