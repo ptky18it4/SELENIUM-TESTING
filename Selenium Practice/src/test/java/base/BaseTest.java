@@ -1,10 +1,10 @@
 package base;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.Select;
 
-import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 class BaseTests {
@@ -13,34 +13,35 @@ class BaseTests {
     public void setUp() {
         //System.setProperty("webdriver.chrome.driver", "resources/chromedriver.exe");
         driver = new ChromeDriver();
-        driver.get("https://the-internet.herokuapp.com/login");
+        driver.get("https://demoqa.com/automation-practice-form");
         driver.manage().window().maximize();
         System.out.println(driver.getTitle());
 
-        WebElement userNameElement = driver.findElement(By.id("username"));
-        userNameElement.sendKeys("tosmith");
-        WebElement passwordElement = driver.findElement(By.id("password"));
-        passwordElement.sendKeys("SuperSecretPassword!");
+        driver.findElement(By.id("firstName")).sendKeys("D");
+        driver.findElement(By.id("lastName")).sendKeys("Kenneth");
+        driver.findElement(By.id("userEmail")).sendKeys("phamtrungky@gmail.com");
+        driver.findElement(By.xpath("//label[contains(text(),'Male')]")).click();
+        driver.findElement(By.id("userNumber")).sendKeys("0909099900");
+        driver.findElement(By.id("dateOfBirthInput")).findElement(By.xpath("//input[@id='dateOfBirthInput']")).click();
 
-        //Way 1:use getAttribute() method to get all the attributes of a WebElement using WebDriver
-        System.out.println("Name attribute of userName button: " + userNameElement.getAttribute("name"));
-        driver.findElement(By.xpath("//i[contains(text(), 'Login')]")).click();
-        driver.navigate().back();
-        List<WebElement> inputList = driver.findElements(By.tagName("input"));
-        System.out.println(inputList.size());
+        //Selecting the first checkbox using XPath
+        driver.findElement(By.xpath("//label[text()='Sports']")).click();
 
-        //Way 2: loop for all eleents in the input tag list
-        for(WebElement element:inputList) {
-            System.out.println("Element: " + element.getAttribute("name"));
-        }
-        for (int i = 0; i < inputList.size(); i++) {
-            System.out.println("Element: " + inputList.get(i).getAttribute("name"));
-        }
+        //Selecting the second checkbox using Xpath
+        driver.findElement(By.xpath("/html[1]/body[1]/div[1]/div[1]/div[1]/div[2]/div[2]/div[1]/form[1]/div[7]/div[2]/div[1]")).click();
+
+        driver.findElement(By.id("uploadPicture")).sendKeys("E:\\DOCUMENTS\\N3 - DOCUMENTS\\SOFTWARE TESTING\\PROJECT TESTING\\Selenium Practice\\resources");
+        Select state = new Select(driver.findElement(By.name("country")));
+        state.selectByVisibleText("NRC");
+        driver.findElement(By.id("submit")).click();
+
+
         driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
         driver.quit();
 
 
     }
+
     public static void main(String[] args) {
         BaseTests test = new BaseTests();
         test.setUp();
