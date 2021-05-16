@@ -1,0 +1,35 @@
+#TEST SCENARIO - TEST CASE
+    ## TEST SCENARIO?
+        ## TODO:
+            * Là tập hợp những test case của 1 chức năng nào đó
+            => Chỉ nêu ra mục đích test ( không chỉ ra bước test cụ thể)
+            => VD:
+                - Check te login functionality (Kiểm tra chức năng màn hình login)
+                - Check the search functionality (Kiểm tra chức năng tìm kiếm)
+                - Check the payment functionality (Kiểm tra chức năng thanh toán)
+    ## WHY - TEST SCENARIO?
+        ## TODO:
+            * Đảm bảo độ bao phủ - Test coverage
+            * Giảm độ lặp và độ phức tạp của tài liệu sản phẩm
+            * Được kiểm duyệt bởi khách hàng, BA, Dev vì vậy sẽ tăng độ tin cậy (bắt buộc)
+            * Là tài liệu giúp xác định nhanh nguồn nhân lực(Effort) cần có trong sự án(khá hay)
+            *
+    ## WHEN - DON'T CREATE - TEST SCENARIO
+        ## TODO:
+            * Một số trường hợp flexible(không cần viết test scenario)
+            => Ứng dụng đang kiểm thử rất phức tạp, không ổn định hoặc dự án đang rơi vào một số thời gian khủng hoảng.
+            => Các dự án tuân theo phương pháp Agile có thể không tạo(hạn chế) kịch bản kiểm thứ
+            => Khi có lỗi mới phát sinh hoặc khi kiểm thử hồi quy
+            =>
+    ## VIẾT TEST SCENARIO HIỆU QUẢ
+        ## TODO:
+            => Bước 1: Đọc các tài liệu yêu cầu của hệ thống đang kiểm thử
+            => Bước 2: Đối với mỗi yêu cầu, tìm ra các hành động có thể của người dùng
+            => Bước 3: Liệt kê ra các kịch bản kiểm thử để xác minh từng tính năng của phần mềm
+            => Bước 4: Chắc chắn mọi yêu cầu đều phải có test scenario (Có thể có hoặc không)
+            => Bước 5: Tạo Scenario và review
+            ==> Sau khi viết xong thì đưa cho các bên liên quan review
+        ## TODO: MẸO VIẾT TEST SCENARIO HIỆU QUẢ
+            => Mỗi test scenario phải được gắn với tối thiểu 1 yêu cầu
+            => Đơn giản càng tốt, tránh tạo ra các kịch bản kiểm thử phức tạp có nhiều yêu cầu cũng lúc
+            => Chọn scenario theo độ ưu tiên của khách hàng

@@ -1,0 +1,33 @@
+# SOFTWARE REQUIREMENT LÀ GÌ
+    ## TODO:
+        * Khái niệm: là yêu cầu của khách hàng về phần mềm đó
+        => Tester cần nắm rõ yêu cầu của hệ thống -> mục đích: test tốt ->
+        => Có nhiều loại Software Requirement
+    ## TẠI SAO CẦN PHẢI PHÂN TÍCH YÊU CẦU?
+        ### TODO: Cái này có hình ảnh thì mới thấy rõ (hài hước)
+             * How the customer explained it
+             * How the project leader unerstood it
+             * How the analyst designed it
+             * How the programmer wrote it
+             * How the business consultant described it
+    ## MỘT SỐ LOẠI SOFTWARE REQUIREMENT
+        ### SOFTWARE REQUIREMENT SPECIFICATION (SRS)
+        TODO: Là tài liệu đặc tả những yêu cầu của phần mềm, bao gồm những yêu cầu về chức năng và phi chức năng.
+
+        ### UX/UI
+        TODO: Là những thiết kế về giao diện người dùng (UI) và trải nghiệm của người dùng (UX)
+
+        ### USE CASE DIAGRAM
+        TODO: Là sơ đồ thể hiện các hành động, sự tương tác của user cho từng chức năng trên hệ thống phần mềm
+
+        ### BUSINESS RULE DIAGRAM
+        TODO: Là sơ đồ thể hiện các logic nghiệp vụ, các luồng dữ liệu của hệ thống phần mềm.
+
+        ### DATA DICTIONARY AND GLOSSARY
+        TODO: Nhiều ngôn ngữ chuyên ngành khó hiểu. Do đó, văn bản này giúp liệt kê các từ ngữ chuyên ngành sử dụng
+              trong tài liệu đặc tả nhằm giúp thành viên trong dữ án hiểu rõ hơn.
+
+        ### USER STORY (AGILE)
+        TODO: Tìm hiểu thêm
+    _______________________________
+

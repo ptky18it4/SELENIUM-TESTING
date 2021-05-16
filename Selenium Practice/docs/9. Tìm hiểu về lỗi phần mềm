@@ -1,0 +1,46 @@
+# TÌM HIỂU LỖI(BUG) PHẦN MỀM
+
+# QUY TẮC XÁC ĐỊNH LỖI(BUG) PHẦN MỀM
+    ## TODO
+        #1. Phần mềm không thực hiện một số việc giống như yêu cầu
+        #2. Phần mềm thực hiện một số việc mà trong yêu cầu nó không được thực hiện
+        #3. Phần mềm thực hiện một số chức năng mà bản đặc tả không đề cập tới
+        #4. Phần mềm không thực hiện một số việc mà bản đặc tả không đề cập tới, nhưng là những việc nên làm
+        #5. Trong con mắt của người kiểm thử, phần mềm là khó hiểu, khó sử dụng, chậm đối với người sử dụng
+# CẤU TRÚC BUG
+    #TODO
+      * Những thứ mà mình liệt kê dưới đây được xem là cấu trúc chung của bug
+      - Date: ___ (Ngày bắt bug )
+      - Assigned to: ___ (Assigned cho ai,...)
+      - Status: ___ (Trạng thái con bug<tìm hiểu ở phần sau>)
+      - Title: ___ (Bắt buộc phải có, viết cho chuẩn, ngắn gọn, rõ ràng -> trảnh việc lặp đi lặp lại việc giải thích cho DEV)
+      - Summary/ Description: ___ (Lí giải rõ hơn về bug, bổ trợ cho Title phía trên)
+      - Environments (OS/ Brower): ___ (Bug xuất hiện ở môi trường nào)
+      __
+      Step to reproduce: (Bước tái tạo)
+      1.
+      2.
+      3.
+      Actual results: ___ (Kết quả trả về của con bug)
+      Expected results: ___ (Kết quả mong đợi)
+      Severity: ___ (Độ nghiêm trọng của con bug -> gây ra hậu quả (lớn, bé,...)
+      Priority Level: ___ (Độ ưu tiên của con bug -> ảnh hướng đến chương trình, quan trọng nhất thì xử lý trước)
+# LIFE CYCLE BUG (Vòng đời của bug)
+    ## TODO: Dựa theo 5 nguyên tắc xác định lỗi
+    1. Is it a valid defect?
+        != : -> status= Rejected
+        == : -> ↙ 2
+    2. Is it an scope?
+        != : -> Status = Deferred
+        == : -> ↙ 3
+    3. Is it a already raised?
+        == : -> Status = Duplicate
+        != : -> Developer starts fixing the code
+    4. Developer starts fixing the code
+        => Status => In-Progress => Code fixed
+        => Status = fixed
+        => Tester retested the code
+        => ↙ 5
+    5. Test Case
+        != : -> Status = Re-Open
+        == : -> Status = Closed
